@@ -1,6 +1,7 @@
-from django.http import HttpResponse
+from django.http import HttpResponse, HttpRequest
 from django.shortcuts import render
+from . import templates
 
 
 def home(request):
-    return HttpResponse("Hello world!")
+    return render(request, 'base.html')
