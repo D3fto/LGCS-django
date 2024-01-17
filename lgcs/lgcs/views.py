@@ -4,4 +4,4 @@ from . import templates
 
 
 def home(request):
-    return render(request, 'base.html')
+    return render(request, 'lgcs/base.html')
