@@ -18,7 +18,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
+from lgcs.lgcs import views
+
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('lgcs/', include("lgcs.lgcs.urls"))
+    path('lgcs/', include("lgcs.lgcs.urls")),
+    path('', views.home, name='home')
 ]

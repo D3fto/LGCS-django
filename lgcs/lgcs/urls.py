@@ -18,8 +18,10 @@ from django.contrib import admin
 from django.urls import path
 from . import views
 
-
+app_name = 'lgcs'
 
 urlpatterns = [
-   path('home/', views.home)
+   path('home/', views.home),
+   path('ipc/', views.ipc, name='ipc'),
+   path('conveyors/', views.conveyors, name='conveyors')
 ]
